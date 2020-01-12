@@ -15,7 +15,7 @@ npm install --save use-input-hook
 ```tsx
 import * as React from 'react'
 
-import useInput from 'use-input';
+import useInput from 'use-input-hook';
 
 const App = () => {
 	const [inputValue, onInputChange] = useInput("");
