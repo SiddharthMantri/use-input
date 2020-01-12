@@ -15,14 +15,13 @@ npm install --save use-input
 ```tsx
 import * as React from 'react'
 
-import MyComponent from 'use-input'
+import useInput from 'use-input';
 
-class Example extends React.Component {
-  render () {
-    return (
-      <MyComponent />
-    )
-  }
+const App = () => {
+	const [inputValue, onInputChange] = useInput("");
+	return (
+    <input type='text' value={inputValue} onChange={onInputChange} />
+	)
 }
 ```
 

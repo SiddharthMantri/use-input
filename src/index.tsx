@@ -1,23 +1,10 @@
-/**
- * @class ExampleComponent
- */
+import { useState, useCallback } from "react";
 
-import * as React from 'react'
-
-import styles from './styles.css'
-
-export type Props = { text: string }
-
-export default class ExampleComponent extends React.Component<Props> {
-  render() {
-    const {
-      text
-    } = this.props
-
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
-  }
+const useInput = (initialValue: any, targetValue: string = 'value'): [any, any] => {
+	const [state, setState] = useState(initialValue);
+	const onChange = useCallback((e): void => {
+		setState(e.target[targetValue]);
+	}, []);
+	return [state, onChange];
 }
+export default useInput;

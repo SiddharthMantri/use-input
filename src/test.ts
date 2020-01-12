@@ -1,7 +1,7 @@
-import ExampleComponent from './'
+import useInput from './'
 
-describe('ExampleComponent', () => {
+describe('Use Input', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(useInput).toBeTruthy()
   })
 })
