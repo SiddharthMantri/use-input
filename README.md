@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-npm install --save use-input
+npm install --save use-input-hook
 ```
 
 ## Usage

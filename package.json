@@ -1,10 +1,10 @@
 {
-  "name": "use-input",
+  "name": "use-input-hook",
   "version": "0.1.0",
   "description": "Stateful hook for input components",
-  "author": "SiddharthMantri",
+  "author": "siddharthmantri",
   "license": "MIT",
-  "repository": "SiddharthMantri/use-input",
+  "repository": "newtt/use-input",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
