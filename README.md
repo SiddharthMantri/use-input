@@ -2,7 +2,7 @@
 
 > Stateful hook for input components
 
-[![NPM](https://img.shields.io/npm/v/use-input.svg)](https://www.npmjs.com/package/use-input) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/use-input.svg)](https://www.npmjs.com/package/use-input-hook) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
