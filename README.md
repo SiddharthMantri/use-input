@@ -1,6 +1,6 @@
 # use-input
 
-> Stateful hook for input components
+> Stateful hook for controlled input components
 
 [![NPM](https://img.shields.io/npm/v/use-input.svg)](https://www.npmjs.com/package/use-input-hook) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -19,8 +19,20 @@ import useInput from 'use-input-hook';
 
 const App = () => {
 	const [inputValue, onInputChange] = useInput("");
+	const [textAreaValue, onTextAreaChange] = useInput("");
+	const [checkBoxValue, onCheckboxChange] = useInput(false, 'checked');
 	return (
-    <input type='text' value={inputValue} onChange={onInputChange} />
+		<>
+			<div>
+				Input: <input type='text' value={inputValue} onChange={onInputChange} />
+			</div>
+			<div>
+				Textarea: <textarea value={textAreaValue} onChange={onTextAreaChange} />
+			</div>
+			<div>
+				Checkbox: <input type="checkbox" value={checkBoxValue} onChange={onCheckboxChange} />
+			</div>
+		</>
 	)
 }
 ```
