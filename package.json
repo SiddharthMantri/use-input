@@ -17,6 +17,7 @@
     "test:watch": "react-scripts-ts test --env=jsdom",
     "build": "rollup -c",
     "start": "rollup -c -w",
+    "prepublish": "npm run build",
     "prepare": "npm run build"
   },
   "dependencies": {},
